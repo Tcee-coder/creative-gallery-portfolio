@@ -2,35 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tracy Baffoe | Web Developer & UI/UX Designer</title>
+    <title>Tracy Baffoe | Web Developer & CSE Student</title>
 
-    <meta
-        name="description"
-        content="Tracy Baffoe is a Ghanaian Computer Science and Engineering student and aspiring freelance web developer creating clean, modern websites, web applications and digital experiences."
-    >
+    <meta name="description"
+          content="Tracy Baffoe is a Computer Science and Engineering student and aspiring freelance web developer in Ghana. Explore her web development, UI/UX and technology projects.">
 
-    <meta
-        name="keywords"
-        content="Tracy Baffoe, Ghana web developer, freelance web developer Ghana, UI UX designer Ghana, website developer, web applications, Computer Science Engineering"
-    >
+    <meta name="keywords"
+          content="Tracy Baffoe, web developer Ghana, freelance web developer Ghana, CSE student, UI UX Ghana, website development, web applications">
 
     <meta name="author" content="Tracy Baffoe">
-
     <meta name="robots" content="index, follow">
-
-    <meta name="theme-color" content="#1f7a4d">
+    <meta name="theme-color" content="#0f172a">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -40,75 +30,60 @@
 <!-- =========================
      HEADER
 ========================= -->
+<header class="header">
 
-<header class="site-header">
-
-    <div class="container header-container">
+    <div class="container nav-container">
 
         <a href="#home" class="logo">
             Tracy<span>.</span>
         </a>
 
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-            type="button"
-        >
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu">
             ☰
         </button>
 
-        <nav class="main-nav" id="mainNav">
+        <nav class="nav" id="navMenu">
 
             <a href="#home">Home</a>
-
             <a href="#about">About</a>
-
             <a href="#services">Services</a>
-
             <a href="#projects">Projects</a>
-
             <a href="#hire">Hire Me</a>
-
             <a href="#contact">Contact</a>
 
         </nav>
-
-        <a href="#hire" class="header-hire-btn">
-            Hire Me
-        </a>
 
     </div>
 
 </header>
 
 
-<main>
-
 <!-- =========================
      HERO
 ========================= -->
-
-<section class="hero-section" id="home">
+<section class="hero" id="home">
 
     <div class="container hero-container">
 
         <div class="hero-content">
 
-            <span class="hero-tag">
+            <p class="eyebrow">
                 COMPUTER SCIENCE & ENGINEERING STUDENT
-            </span>
+            </p>
 
             <h1>
-                I build clean, modern websites and digital experiences.
+                I build clean, modern
+                <span>websites</span> and
+                digital experiences.
             </h1>
 
-            <p>
-                I'm Tracy Baffoe, a Computer Science and Engineering student
-                in Ghana and an aspiring freelance web developer. I create
-                responsive websites, web applications and simple digital
-                experiences that solve real problems.
+            <p class="hero-description">
+                I'm Tracy Baffoe, a Computer Science and Engineering
+                student in Ghana and an aspiring freelance web developer.
+                I enjoy turning ideas into simple, useful and
+                responsive digital experiences.
             </p>
 
             <div class="hero-buttons">
@@ -117,7 +92,7 @@
                     View My Work
                 </a>
 
-                <a href="#hire" class="btn btn-secondary">
+                <a href="#contact" class="btn btn-secondary">
                     Let's Work Together
                 </a>
 
@@ -125,11 +100,9 @@
 
             <div class="hero-socials">
 
-                <a
-                    href="https://github.com/tcee-coder"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a href="https://github.com/tcee-coder"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     GitHub
                 </a>
 
@@ -146,15 +119,20 @@
         </div>
 
 
+        <!-- Code-style card -->
         <div class="hero-card">
 
             <div class="code-window">
 
-                <div class="code-window-header">
+                <div class="code-top">
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="code-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p>portfolio.js</p>
 
                 </div>
 
@@ -163,36 +141,53 @@
                     <p>
                         <span class="code-purple">const</span>
                         developer =
-                        <span class="code-green">"Tracy"</span>;
                     </p>
 
-                    <p>
-                        <span class="code-purple">const</span>
-                        skills = [
+                    <p class="indent">
+                        {
                     </p>
 
-                    <p class="code-indent">
-                        <span class="code-green">"HTML"</span>,
+                    <p class="indent-2">
+                        name:
+                        <span class="code-green">
+                            "Tracy Baffoe"
+                        </span>,
                     </p>
 
-                    <p class="code-indent">
-                        <span class="code-green">"CSS"</span>,
+                    <p class="indent-2">
+                        location:
+                        <span class="code-green">
+                            "Ghana"
+                        </span>,
                     </p>
 
-                    <p class="code-indent">
-                        <span class="code-green">"JavaScript"</span>,
+                    <p class="indent-2">
+                        role:
+                        <span class="code-green">
+                            "Web Developer"
+                        </span>,
                     </p>
 
-                    <p class="code-indent">
-                        <span class="code-green">"UI/UX"</span>
+                    <p class="indent-2">
+                        skills:
                     </p>
 
-                    <p>];</p>
+                    <p class="indent-3">
+                        [
+                        <span class="code-green">
+                            "HTML"
+                        </span>,
+                        <span class="code-green">
+                            "CSS"
+                        </span>,
+                        <span class="code-green">
+                            "JavaScript"
+                        </span>
+                        ]
+                    </p>
 
-                    <p>
-                        <span class="code-purple">let</span>
-                        goal =
-                        <span class="code-green">"Build & Learn"</span>;
+                    <p class="indent">
+                        };
                     </p>
 
                 </div>
@@ -209,98 +204,94 @@
 <!-- =========================
      ABOUT
 ========================= -->
-
-<section class="about-section section" id="about">
+<section class="section about" id="about">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <span class="section-tag">
+            <p class="eyebrow">
                 ABOUT ME
-            </span>
+            </p>
 
             <h2>
-                Building my skills through real projects.
+                Building while I learn.
             </h2>
 
         </div>
-
 
         <div class="about-grid">
 
             <div class="about-text">
 
                 <p>
-                    I am a Computer Science and Engineering student with
-                    an interest in web development, UI/UX design and
-                    technology-driven problem solving.
+                    I'm a Computer Science and Engineering student
+                    with a growing interest in web development,
+                    UI/UX design and technology solutions.
                 </p>
 
                 <p>
-                    I enjoy taking ideas and turning them into practical
-                    digital experiences. My portfolio includes websites,
-                    web applications, dashboards and educational technology
-                    projects.
+                    I enjoy learning by building practical projects.
+                    My portfolio contains websites, dashboards,
+                    research tools and technology prototypes that
+                    demonstrate my development journey.
                 </p>
 
                 <p>
-                    As I continue developing my skills, I am open to
-                    freelance opportunities where I can learn, contribute
-                    and create useful solutions for individuals,
-                    organizations and businesses.
+                    As I continue developing my skills, I'm also
+                    interested in working with individuals,
+                    students, small businesses and organizations
+                    that need simple and effective digital solutions.
                 </p>
 
-                <a
-                    href="Tracy-CV.pdf"
-                    class="btn btn-primary"
-                    download
-                >
+                <a href="Tracy-CV.pdf"
+                   class="btn btn-primary"
+                   download>
                     Download My CV
                 </a>
 
             </div>
 
 
-            <div class="about-stats">
+            <div class="stats-grid">
 
                 <div class="stat-card">
 
-                    <strong>06+</strong>
+                    <h3>06+</h3>
 
-                    <span>
+                    <p>
                         Portfolio Projects
-                    </span>
+                    </p>
 
                 </div>
 
                 <div class="stat-card">
 
-                    <strong>03+</strong>
+                    <h3>03+</h3>
 
-                    <span>
+                    <p>
                         Technology Areas
-                    </span>
+                    </p>
 
                 </div>
 
                 <div class="stat-card">
 
-                    <strong>100%</strong>
+                    <h3>100%</h3>
 
-                    <span>
+                    <p>
                         Learning & Building
-                    </span>
+                    </p>
 
                 </div>
 
                 <div class="stat-card">
 
-                    <strong>GH</strong>
+                    <h3>GH</h3>
 
-                    <span>
+                    <p>
                         Ghana
-                    </span>
+                    </p>
 
                 </div>
 
@@ -316,24 +307,23 @@
 <!-- =========================
      SERVICES
 ========================= -->
-
-<section class="services-section section" id="services">
+<section class="section services" id="services">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <span class="section-tag">
-                SERVICES
-            </span>
+            <p class="eyebrow">
+                WHAT I DO
+            </p>
 
             <h2>
-                What I can help you build.
+                Services
             </h2>
 
             <p>
-                Practical digital solutions designed around your
-                goals, audience and project requirements.
+                Practical digital solutions for individuals,
+                students, small businesses and personal projects.
             </p>
 
         </div>
@@ -341,7 +331,7 @@
 
         <div class="services-grid">
 
-            <article class="service-card">
+            <div class="service-card">
 
                 <div class="service-number">
                     01
@@ -352,14 +342,15 @@
                 </h3>
 
                 <p>
-                    Responsive and modern websites for personal brands,
-                    small businesses, organizations and projects.
+                    Responsive websites using HTML, CSS and
+                    JavaScript with a focus on clean structure
+                    and user-friendly layouts.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="service-card">
+            <div class="service-card">
 
                 <div class="service-number">
                     02
@@ -370,14 +361,14 @@
                 </h3>
 
                 <p>
-                    Functional browser-based applications designed to
-                    organize information and solve practical problems.
+                    Interactive web applications and prototypes
+                    designed to solve practical problems.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="service-card">
+            <div class="service-card">
 
                 <div class="service-number">
                     03
@@ -388,14 +379,15 @@
                 </h3>
 
                 <p>
-                    Simple and user-focused interface concepts for
-                    websites, dashboards and digital products.
+                    Simple interface concepts focused on
+                    usability, layout, navigation and responsive
+                    design.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="service-card">
+            <div class="service-card">
 
                 <div class="service-number">
                     04
@@ -406,11 +398,12 @@
                 </h3>
 
                 <p>
-                    Help improving layouts, responsiveness, navigation,
-                    content structure and overall website presentation.
+                    Improving existing websites through better
+                    layouts, responsiveness, organization and
+                    user experience.
                 </p>
 
-            </article>
+            </div>
 
         </div>
 
@@ -422,24 +415,23 @@
 <!-- =========================
      PROJECTS
 ========================= -->
-
-<section class="projects-section section" id="projects">
+<section class="section projects" id="projects">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <span class="section-tag">
+            <p class="eyebrow">
                 MY WORK
-            </span>
+            </p>
 
             <h2>
-                Selected Projects
+                Featured Projects
             </h2>
 
             <p>
-                A collection of projects exploring web development,
-                UI/UX design, research technology and digital solutions.
+                A selection of projects I've built while developing
+                my skills in web development, UI/UX and technology.
             </p>
 
         </div>
@@ -449,23 +441,18 @@
 
 
             <!-- PROJECT 01 -->
-
             <article class="project-card">
 
-                <div class="project-image-wrapper">
+                <div class="project-image">
 
-                    <img
-                        src="images/project-01.jpg"
-                        alt="Smart Airport Baggage Tracking System"
-                        class="project-image"
-                    >
+                    <!-- CORRECTED IMAGE PATH -->
+                    <img src="project-01.jpg"
+                         alt="Smart Airport Baggage Tracking System"
+                         loading="lazy">
 
-                    <button
-                        class="project-view-btn"
-                        data-index="0"
-                        type="button"
-                    >
-                        View Project
+                    <button class="project-view"
+                            onclick="openLightbox(0)">
+                        View
                     </button>
 
                 </div>
@@ -481,9 +468,15 @@
                     </h3>
 
                     <p>
-                        A student prototype designed to simulate baggage
-                        registration, tracking and airport staff monitoring.
+                        A student research and prototype system
+                        designed to simulate baggage registration,
+                        tracking and status management.
                     </p>
+
+                    <button class="text-button"
+                            onclick="openLightbox(0)">
+                        View Project →
+                    </button>
 
                 </div>
 
@@ -491,23 +484,18 @@
 
 
             <!-- PROJECT 02 -->
-
             <article class="project-card">
 
-                <div class="project-image-wrapper">
+                <div class="project-image">
 
-                    <img
-                        src="images/project-02.jpg"
-                        alt="UI UX Design Concept"
-                        class="project-image"
-                    >
+                    <!-- CORRECTED IMAGE PATH -->
+                    <img src="project-02.jpg"
+                         alt="UI UX Design Concept"
+                         loading="lazy">
 
-                    <button
-                        class="project-view-btn"
-                        data-index="1"
-                        type="button"
-                    >
-                        View Project
+                    <button class="project-view"
+                            onclick="openLightbox(1)">
+                        View
                     </button>
 
                 </div>
@@ -523,9 +511,15 @@
                     </h3>
 
                     <p>
-                        A clean interface concept exploring layouts,
-                        visual hierarchy and user-focused design.
+                        A modern interface concept focused on
+                        clean layouts, navigation and responsive
+                        user experience.
                     </p>
+
+                    <button class="text-button"
+                            onclick="openLightbox(1)">
+                        View Project →
+                    </button>
 
                 </div>
 
@@ -533,23 +527,18 @@
 
 
             <!-- PROJECT 03 -->
-
             <article class="project-card">
 
-                <div class="project-image-wrapper">
+                <div class="project-image">
 
-                    <img
-                        src="images/project-03.jpg"
-                        alt="Research Course Portal"
-                        class="project-image"
-                    >
+                    <!-- CORRECTED IMAGE PATH -->
+                    <img src="project-03.jpg"
+                         alt="Research Course Portal"
+                         loading="lazy">
 
-                    <button
-                        class="project-view-btn"
-                        data-index="2"
-                        type="button"
-                    >
-                        View Project
+                    <button class="project-view"
+                            onclick="openLightbox(2)">
+                        View
                     </button>
 
                 </div>
@@ -565,9 +554,15 @@
                     </h3>
 
                     <p>
-                        An educational research portal supporting course
-                        activities, participant surveys and research data.
+                        A research-focused learning portal for
+                        collecting participant information,
+                        assessments and course responses.
                     </p>
+
+                    <button class="text-button"
+                            onclick="openLightbox(2)">
+                        View Project →
+                    </button>
 
                 </div>
 
@@ -575,23 +570,18 @@
 
 
             <!-- PROJECT 04 -->
-
             <article class="project-card">
 
-                <div class="project-image-wrapper">
+                <div class="project-image">
 
-                    <img
-                        src="images/project-04.jpg"
-                        alt="STEM School Website"
-                        class="project-image"
-                    >
+                    <!-- CORRECTED IMAGE PATH -->
+                    <img src="project-04.jpg"
+                         alt="STEM School Website"
+                         loading="lazy">
 
-                    <button
-                        class="project-view-btn"
-                        data-index="3"
-                        type="button"
-                    >
-                        View Project
+                    <button class="project-view"
+                            onclick="openLightbox(3)">
+                        View
                     </button>
 
                 </div>
@@ -607,9 +597,15 @@
                     </h3>
 
                     <p>
-                        A responsive school website concept designed to
-                        present programmes, activities, news and resources.
+                        A responsive school website concept designed
+                        to present school information, activities,
+                        programmes and achievements.
                     </p>
+
+                    <button class="text-button"
+                            onclick="openLightbox(3)">
+                        View Project →
+                    </button>
 
                 </div>
 
@@ -617,23 +613,18 @@
 
 
             <!-- PROJECT 05 -->
-
             <article class="project-card">
 
-                <div class="project-image-wrapper">
+                <div class="project-image">
 
-                    <img
-                        src="images/project-05.jpg"
-                        alt="Technology Dashboard"
-                        class="project-image"
-                    >
+                    <!-- CORRECTED IMAGE PATH -->
+                    <img src="project-05.jpg"
+                         alt="Technology Dashboard"
+                         loading="lazy">
 
-                    <button
-                        class="project-view-btn"
-                        data-index="4"
-                        type="button"
-                    >
-                        View Project
+                    <button class="project-view"
+                            onclick="openLightbox(4)">
+                        View
                     </button>
 
                 </div>
@@ -649,10 +640,15 @@
                     </h3>
 
                     <p>
-                        A dashboard interface concept for displaying
-                        useful information through cards, tables and
-                        visual data.
+                        An interactive dashboard concept for
+                        presenting information, statistics and
+                        technology-related data.
                     </p>
+
+                    <button class="text-button"
+                            onclick="openLightbox(4)">
+                        View Project →
+                    </button>
 
                 </div>
 
@@ -660,23 +656,18 @@
 
 
             <!-- PROJECT 06 -->
-
             <article class="project-card">
 
-                <div class="project-image-wrapper">
+                <div class="project-image">
 
-                    <img
-                        src="images/project-06.jpg"
-                        alt="Creative Web Experience"
-                        class="project-image"
-                    >
+                    <!-- CORRECTED IMAGE PATH -->
+                    <img src="project-06.jpg"
+                         alt="Creative Web Experience"
+                         loading="lazy">
 
-                    <button
-                        class="project-view-btn"
-                        data-index="5"
-                        type="button"
-                    >
-                        View Project
+                    <button class="project-view"
+                            onclick="openLightbox(5)">
+                        View
                     </button>
 
                 </div>
@@ -692,13 +683,20 @@
                     </h3>
 
                     <p>
-                        A modern web experience focused on visual
-                        presentation, responsive design and interaction.
+                        A creative website concept combining
+                        modern visual design, responsive layouts
+                        and interactive elements.
                     </p>
+
+                    <button class="text-button"
+                            onclick="openLightbox(5)">
+                        View Project →
+                    </button>
 
                 </div>
 
             </article>
+
 
         </div>
 
@@ -710,19 +708,18 @@
 <!-- =========================
      PROCESS
 ========================= -->
-
-<section class="process-section section">
+<section class="section process">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <span class="section-tag">
+            <p class="eyebrow">
                 MY PROCESS
-            </span>
+            </p>
 
             <h2>
-                From idea to finished project.
+                How I Work
             </h2>
 
         </div>
@@ -732,14 +729,17 @@
 
             <div class="process-card">
 
-                <span>01</span>
+                <span>
+                    01
+                </span>
 
                 <h3>
                     Understand
                 </h3>
 
                 <p>
-                    Understand your goals, requirements and target users.
+                    Understand the idea, goals and requirements
+                    of the project.
                 </p>
 
             </div>
@@ -747,15 +747,17 @@
 
             <div class="process-card">
 
-                <span>02</span>
+                <span>
+                    02
+                </span>
 
                 <h3>
                     Build
                 </h3>
 
                 <p>
-                    Develop the website or digital solution based on
-                    the agreed direction.
+                    Turn the idea into a functional and responsive
+                    digital experience.
                 </p>
 
             </div>
@@ -763,15 +765,17 @@
 
             <div class="process-card">
 
-                <span>03</span>
+                <span>
+                    03
+                </span>
 
                 <h3>
                     Refine
                 </h3>
 
                 <p>
-                    Test, improve responsiveness and refine the user
-                    experience.
+                    Test the design, improve the experience and
+                    fix issues.
                 </p>
 
             </div>
@@ -779,15 +783,17 @@
 
             <div class="process-card">
 
-                <span>04</span>
+                <span>
+                    04
+                </span>
 
                 <h3>
                     Deliver
                 </h3>
 
                 <p>
-                    Provide the finished project and make sure it is
-                    ready for use.
+                    Provide the completed project and explain
+                    how it works.
                 </p>
 
             </div>
@@ -802,115 +808,77 @@
 <!-- =========================
      HIRE ME
 ========================= -->
+<section class="section hire" id="hire">
 
-<section class="hire-section" id="hire">
-
-    <div class="container hire-container">
-
-        <div class="hire-content">
-
-            <span class="section-tag">
-                AVAILABLE FOR WORK
-            </span>
-
-            <h2>
-                Have a project in mind?
-            </h2>
-
-            <p>
-                I'm available for freelance projects, student projects,
-                personal websites, landing pages and web applications.
-                Let's turn your idea into a clean and functional
-                digital experience.
-            </p>
-
-
-            <div class="hire-services">
-
-                <span>
-                    Website Development
-                </span>
-
-                <span>
-                    Web Applications
-                </span>
-
-                <span>
-                    UI/UX Design
-                </span>
-
-                <span>
-                    Website Improvements
-                </span>
-
-            </div>
-
-
-            <div class="hire-actions">
-
-                <a href="#contact" class="btn btn-primary">
-                    Hire Me
-                </a>
-
-                <a
-                    href="mailto:tracybaffoe56@gmail.com"
-                    class="btn btn-outline"
-                >
-                    Email Me
-                </a>
-
-            </div>
-
-        </div>
-
+    <div class="container">
 
         <div class="hire-card">
 
-            <div class="hire-card-icon">
-                💻
+            <div class="hire-content">
+
+                <span class="availability">
+                    AVAILABLE FOR WORK
+                </span>
+
+                <h2>
+                    Have a project in mind?
+                </h2>
+
+                <p>
+                    I'm open to freelance opportunities,
+                    student projects, personal websites,
+                    landing pages and web applications.
+                </p>
+
+                <div class="service-chips">
+
+                    <span>
+                        Websites
+                    </span>
+
+                    <span>
+                        Web Apps
+                    </span>
+
+                    <span>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        Landing Pages
+                    </span>
+
+                </div>
+
+                <a href="#contact"
+                   class="btn btn-primary">
+                    Hire Me
+                </a>
+
             </div>
-
-            <h3>
-                Let's Build Something
-            </h3>
-
-            <p>
-                Have an idea, website or digital project you want
-                to bring to life? I'd be happy to discuss it with you.
-            </p>
 
 
             <div class="hire-contact">
 
-                <strong>
-                    Email
-                </strong>
+                <p>
+                    Email me
+                </p>
 
                 <a href="mailto:tracybaffoe56@gmail.com">
                     tracybaffoe56@gmail.com
                 </a>
 
-            </div>
-
-
-            <div class="hire-contact">
-
-                <strong>
+                <p>
                     Location
-                </strong>
+                </p>
 
                 <span>
-                    Ghana • Available for Remote Work
+                    Ghana / Remote
                 </span>
 
-            </div>
-
-
-            <div class="hire-contact">
-
-                <strong>
+                <p>
                     Freelancer
-                </strong>
+                </p>
 
                 <span>
                     @TracyBuilds
@@ -928,24 +896,23 @@
 <!-- =========================
      CONTACT
 ========================= -->
-
-<section class="contact-section section" id="contact">
+<section class="section contact" id="contact">
 
     <div class="container">
 
-        <div class="contact-heading">
+        <div class="section-heading">
 
-            <span class="section-tag">
+            <p class="eyebrow">
                 GET IN TOUCH
-            </span>
+            </p>
 
             <h2>
-                Let's work together.
+                Let's Work Together
             </h2>
 
             <p>
-                Have a project idea or want to discuss a freelance
-                opportunity? Send me a message.
+                Have an idea, project or question?
+                Send me a message.
             </p>
 
         </div>
@@ -955,27 +922,21 @@
 
 
             <!-- CONTACT FORM -->
-
             <div class="contact-form-wrapper">
 
-                <form
-                    id="contactForm"
-                    class="contact-form"
-                >
+                <form id="contactForm">
 
                     <div class="form-group">
 
                         <label for="name">
-                            Your Name
+                            Name
                         </label>
 
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            required
-                        >
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Your name"
+                               required>
 
                     </div>
 
@@ -983,16 +944,14 @@
                     <div class="form-group">
 
                         <label for="email">
-                            Email Address
+                            Email
                         </label>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                        >
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="your@email.com"
+                               required>
 
                     </div>
 
@@ -1003,13 +962,11 @@
                             Subject
                         </label>
 
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is your project about?"
-                            required
-                        >
+                        <input type="text"
+                               id="subject"
+                               name="subject"
+                               placeholder="Project enquiry"
+                               required>
 
                     </div>
 
@@ -1020,21 +977,17 @@
                             Message
                         </label>
 
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Tell me about your project..."
-                            required
-                        ></textarea>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  placeholder="Tell me about your project..."
+                                  required></textarea>
 
                     </div>
 
 
-                    <button
-                        type="submit"
-                        class="contact-submit"
-                    >
+                    <button type="submit"
+                            class="btn btn-primary">
                         Send Message
                     </button>
 
@@ -1043,126 +996,68 @@
             </div>
 
 
-            <!-- CONTACT INFORMATION -->
-
-            <div class="contact-info">
+            <!-- CONTACT DETAILS -->
+            <div class="contact-details">
 
                 <div class="contact-item">
 
-                    <div class="contact-item-icon">
-                        ✉
-                    </div>
+                    <span>
+                        Email
+                    </span>
 
-                    <div>
-
-                        <strong>
-                            Email
-                        </strong>
-
-                        <a href="mailto:tracybaffoe56@gmail.com">
-                            tracybaffoe56@gmail.com
-                        </a>
-
-                    </div>
+                    <a href="mailto:tracybaffoe56@gmail.com">
+                        tracybaffoe56@gmail.com
+                    </a>
 
                 </div>
 
 
                 <div class="contact-item">
 
-                    <div class="contact-item-icon">
-                        📍
-                    </div>
+                    <span>
+                        Location
+                    </span>
 
-                    <div>
-
-                        <strong>
-                            Location
-                        </strong>
-
-                        <span>
-                            Ghana
-                        </span>
-
-                    </div>
+                    <p>
+                        Ghana / Remote
+                    </p>
 
                 </div>
 
 
                 <div class="contact-item">
 
-                    <div class="contact-item-icon">
-                        💼
-                    </div>
+                    <span>
+                        Freelancer
+                    </span>
 
-                    <div>
-
-                        <strong>
-                            Freelancer
-                        </strong>
-
-                        <span>
-                            @TracyBuilds
-                        </span>
-
-                    </div>
+                    <p>
+                        @TracyBuilds
+                    </p>
 
                 </div>
 
 
                 <div class="contact-item">
 
-                    <div class="contact-item-icon">
-                        💻
-                    </div>
+                    <span>
+                        GitHub
+                    </span>
 
-                    <div>
-
-                        <strong>
-                            GitHub
-                        </strong>
-
-                        <a
-                            href="https://github.com/tcee-coder"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            github.com/tcee-coder
-                        </a>
-
-                    </div>
+                    <a href="https://github.com/tcee-coder"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        github.com/tcee-coder
+                    </a>
 
                 </div>
 
 
-                <div class="contact-item">
+                <div class="social-links">
 
-                    <div class="contact-item-icon">
-                        ✓
-                    </div>
-
-                    <div>
-
-                        <strong>
-                            Availability
-                        </strong>
-
-                        <span>
-                            Open to freelance projects
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-socials">
-
-                    <a
-                        href="https://github.com/tcee-coder"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href="https://github.com/tcee-coder"
+                       target="_blank"
+                       rel="noopener noreferrer">
                         GitHub
                     </a>
 
@@ -1184,71 +1079,59 @@
 
 </section>
 
-</main>
-
 
 <!-- =========================
      LIGHTBOX
 ========================= -->
+<div class="lightbox"
+     id="lightbox"
+     aria-hidden="true">
 
-<div
-    class="lightbox"
-    id="lightbox"
-    aria-hidden="true"
->
-
-    <div class="lightbox-overlay"></div>
+    <div class="lightbox-overlay"
+         onclick="closeLightbox()">
+    </div>
 
     <div class="lightbox-content">
 
-        <button
-            class="lightbox-close"
-            id="lightboxClose"
-            type="button"
-            aria-label="Close project preview"
-        >
+        <button class="lightbox-close"
+                onclick="closeLightbox()"
+                aria-label="Close project">
             ×
         </button>
 
-
-        <button
-            class="lightbox-nav lightbox-prev"
-            id="lightboxPrev"
-            type="button"
-            aria-label="Previous project"
-        >
+        <button class="lightbox-prev"
+                onclick="previousProject()"
+                aria-label="Previous project">
             ‹
         </button>
 
 
         <div class="lightbox-image-wrapper">
 
-            <img
-                src=""
-                alt=""
-                id="lightboxImage"
-            >
+            <img id="lightboxImage"
+                 src=""
+                 alt="">
 
         </div>
 
 
-        <button
-            class="lightbox-nav lightbox-next"
-            id="lightboxNext"
-            type="button"
-            aria-label="Next project"
-        >
+        <button class="lightbox-next"
+                onclick="nextProject()"
+                aria-label="Next project">
             ›
         </button>
 
 
-        <div class="lightbox-details">
+        <div class="lightbox-info">
 
-            <span id="lightboxCategory"></span>
+            <span id="lightboxCategory">
+            </span>
 
-            <h3 id="lightboxTitle"></h3>
+            <h3 id="lightboxTitle">
+            </h3>
 
-            <p id="lightboxDescription"></p>
+            <p id="lightboxDescription">
+            </p>
 
         </div>
 
@@ -1260,19 +1143,18 @@
 <!-- =========================
      FOOTER
 ========================= -->
-
-<footer class="site-footer">
+<footer class="footer">
 
     <div class="container footer-container">
 
-        <div class="footer-brand">
+        <div>
 
             <a href="#home" class="logo">
                 Tracy<span>.</span>
             </a>
 
             <p>
-                Building, learning and creating digital experiences.
+                Building, learning and creating.
             </p>
 
         </div>
@@ -1292,10 +1174,6 @@
                 Projects
             </a>
 
-            <a href="#hire">
-                Hire Me
-            </a>
-
             <a href="#contact">
                 Contact
             </a>
@@ -1303,34 +1181,11 @@
         </div>
 
 
-        <div class="footer-socials">
+        <p class="copyright">
 
-            <a
-                href="https://github.com/tcee-coder"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
+            © <span id="currentYear"></span>
+            Tracy Baffoe. All rights reserved.
 
-            <a href="#contact">
-                LinkedIn
-            </a>
-
-            <a href="#contact">
-                Freelancer
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © <span id="currentYear"></span> Tracy Baffoe.
-            All rights reserved.
         </p>
 
     </div>
@@ -1338,6 +1193,9 @@
 </footer>
 
 
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 <script src="script.js"></script>
 
 </body>
